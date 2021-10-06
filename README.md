@@ -43,7 +43,7 @@ chmod 755 exec.sh
 crontab -e
 
 # WiFi監視
-0/10 * * * * sh /YOUR_DIRECTORYs/watch-wifi-data/exec.sh 2>/YOUR_DIRECTORYs/watch-wifi-data/error.log
+0/10 * * * * export PATH=$PATH:/YARN_PATH/.anyenv/envs/nodenv/shims && /YOUR_DIRECTORY/watch-wifi-data/exec.sh 2>/YOUR_DIRECTORY/watch-wifi-data/error.log
 ```
 
 ## Note
